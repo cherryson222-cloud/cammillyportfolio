@@ -153,17 +153,17 @@ body {
     z-index: 100;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
     font-size: 1.2rem;
     color: var(--light);
     font-weight: 700;
     text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
@@ -1193,13 +1193,12 @@ footer {
     .navbar {
         padding: 0.5rem 1rem;
         max-width: 95%;
-        display: flex; /* Adicionado para alinhar o toggle */
-        justify-content: space-between; /* Adicionado para alinhar o toggle */
-        align-items: center; /* Adicionado para alinhar o toggle */
     }
 
     .nav-container {
-        justify-content: flex-start; /* Logo fica à esquerda */
+        width: 100%; /* Garante que o container ocupe todo o espaço */
+        display: flex;
+        justify-content: space-between; /* Alinha o logo e o menu */
     }
 
     /* Esconde os links e o botão no desktop */
