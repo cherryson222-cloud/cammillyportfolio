@@ -153,17 +153,17 @@ body {
     z-index: 100;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     font-size: 1.2rem;
     color: var(--light);
     font-weight: 700;
     text-decoration: none;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .nav-links {
@@ -1191,15 +1191,7 @@ footer {
 
     /* --- Barra de Navegação Móvel --- */
     .navbar {
-        padding: 0.5rem 1rem;
-        max-width: 95%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-container {
-        /* As propriedades de flexbox foram movidas para .navbar */
+        display: none; /* Esconde completamente o cabeçalho em telas menores */
     }
 
     /* Esconde os links e o botão no desktop */
