@@ -1,0 +1,98 @@
+/* Estilos para a página da galeria PL3 */
+
+.pl3-header {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: var(--secondary);
+    color: var(--dark);
+    border-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.pl3-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+}
+
+.pl3-description {
+    max-width: 800px;
+    margin-top: 1rem;
+    color: var(--gray);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.pl3-gallery {
+    padding: 0 2rem 6rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Adiciona uma regra específica para a grade da galeria PL3 */
+.pl3-gallery .projects-grid {
+    grid-template-columns: 1fr; /* Define uma única coluna */
+    max-width: 900px; /* Limita a largura máxima para melhor leitura */
+    margin: 0 auto; /* Centraliza a coluna única */
+}
+
+/* Ajustes nos cards de projeto para a galeria */
+.project-card {
+    position: relative;
+    height: auto; /* Remove a altura fixa para exibir a imagem completa */
+}
+
+.project-card .project-image {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    max-height: 80vh; /* Limita a altura para não ocupar a tela inteira */
+    height: auto; /* Ajusta a altura automaticamente */
+    object-fit: cover; /* Faz a imagem cobrir a área, cortando se necessário */
+    border-radius: 20px; /* Mantém a borda arredondada da imagem */
+}
+
+.project-card .project-content {
+    display: none; /* Oculta o conteúdo de texto na galeria */
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}

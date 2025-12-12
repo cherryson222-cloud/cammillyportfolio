@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cammilly Rafaella | UX/UI Developer</title>
+    <link rel="icon" href="/img/code-solid-full.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+    <!-- Background Animado -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+    </div>
+
+    <!-- Cursor Animado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Cammilly Rafaella</a>
+            <div class="nav-links">
+                <a href="#about">Sobre</a>
+                <a href="#focus">Foco</a>
+                <a href="#skills">Habilidades</a>
+                <a href="pl3-portfolio.html" id="portfolio-nav-link">Portfólio</a>
+                <a href="#contact" class="nav-cta">Contato</a>
+            </div>
+        </div>
+        
+        <!-- Ícone do Menu Hambúrguer (Adicionado) -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navegação Móvel (Adicionada) -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#about" class="mobile-link">Sobre</a>
+            <a href="#focus" class="mobile-link">Foco</a>
+            <a href="#skills" class="mobile-link">Habilidades</a>
+            <a href="pl3-portfolio.html" class="mobile-link">Portfólio</a>
+            <a href="#contact" class="mobile-link nav-cta">Contato</a>
+        </div>
+    </nav>
+
+    <!-- NOVA About Section (Terminal Layout) -->
+    <section id="about" class="about-section-new">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-term close"></span>
+                    <span class="btn-term minimize"></span>
+                    <span class="btn-term maximize"></span>
+                </div>
+                <div class="terminal-title">Garota do TI</div>
+            </div>
+            <div class="terminal-body">
+                <div id="terminal-content">
+                    <!-- O conteúdo será injetado aqui via JavaScript -->
+                </div>
+                <span class="cursor-typing"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- ============ SEÇÃO DE ÁREAS DE FOCO ============ -->
+    <!-- ================================================== -->
+    <section id="focus">
+        <div class="section-header">
+            <h2 class="section-title">Áreas de Foco & Tecnologias</h2>
+        </div>
+
+        <div class="focus-grid">
+            <!-- Card de Front-End -->
+            <div class="focus-card scroll-reveal">
+                <div class="focus-header">
+                    <i class="focus-icon fas fa-palette"></i>
+                    <h3 class="focus-title">Front-End e Design</h3>
+                </div>
+                <p class="focus-description">
+                    Transformando ideias em interfaces interativas e visualmente impactantes, com foco na experiência do usuário.
+                </p>
+                <div class="focus-tags">
+                    <span class="focus-tag">HTML5</span>
+                    <span class="focus-tag">CSS3</span>
+                    <span class="focus-tag">JavaScript (ES6+)</span>
+                    <span class="focus-tag">React</span>
+                    <span class="focus-tag">UX/UI Design (Figma)</span>
+                    <span class="focus-tag">Responsividade</span>
+                </div>
+            </div>
+
+            <!-- Card de Back-End -->
+            <div class="focus-card scroll-reveal">
+                <div class="focus-header">
+                    <i class="focus-icon fas fa-server"></i>
+                    <h3 class="focus-title">Back-End e Dados</h3>
+                    <span class="status-badge">Em Desenvolvimento</span>
+                </div>
+                <p class="focus-description">
+                    Construindo a lógica, APIs e bancos de dados que dão vida e poder às aplicações web modernas.
+                </p>
+                <div class="focus-tags">
+                    <span class="focus-tag">Node.js</span>
+                    <span class="focus-tag">Express.js</span>
+                    <span class="focus-tag">MongoDB</span>
+                    <span class="focus-tag">PostgreSQL</span>
+                    <span class="focus-tag">RESTful APIs</span>
+                    <span class="focus-tag">Autenticação (JWT)</span>
+                </div>
+            </div>
+
+            <!-- Card de Ferramentas -->
+            <div class="focus-card scroll-reveal">
+                <div class="focus-header">
+                    <i class="focus-icon fas fa-tools"></i>
+                    <h3 class="focus-title">Ferramentas Essenciais</h3>
+                </div>
+                <p class="focus-description">
+                    Utilizando o ecossistema de desenvolvimento para garantir um fluxo de trabalho ágil, versionado e com deploy contínuo.
+                </p>
+                <div class="focus-tags">
+                    <span class="focus-tag">Git</span>
+                    <span class="focus-tag">GitHub</span>
+                    <span class="focus-tag">Vercel</span>
+                    <span class="focus-tag">Netlify</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <h2 class="section-title">Ferramentas & <span class="gradient-text">Tecnologias</span></h2>
+            <p class="section-description">
+                Estas são as principais ferramentas que utilizo para dar vida a projetos, com foco em performance, design e experiências de usuário memoráveis.
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-javascript-plain skill-icon"></i>
+                <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-react-original skill-icon"></i>
+                <p class="skill-name">React</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-vuejs-plain skill-icon"></i>
+                <p class="skill-name">Vue.js</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-html5-plain skill-icon"></i>
+                <p class="skill-name">HTML5</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-css3-plain skill-icon"></i>
+                <p class="skill-name">CSS3</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-nodejs-plain skill-icon"></i>
+                <p class="skill-name">Node.js</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-figma-plain skill-icon"></i>
+                <p class="skill-name">Figma</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-wordpress-plain skill-icon"></i>
+                <p class="skill-name">WordPress</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="devicon-photoshop-plain skill-icon"></i>
+                <p class="skill-name">Adobe Photoshop</p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <i class="fa-solid fa-palette skill-icon"></i>
+                <p class="skill-name">Canva</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2 class="section-title">Meu <span class="text-secondary">Portfólio</span></h2>
+        </div>
+
+        <!-- Novo Layout da Chamada para Ação do Portfólio -->
+        <div class="projects-cta-layout">
+            <div class="cta-content">
+                <h3 class="cta-title">Pronto para ver a teoria na prática?</h3>
+                <p class="cta-description">
+                    Cada projeto é uma nova oportunidade de aprender e criar algo único. Mergulhe nos meus trabalhos mais recentes e veja como transformo ideias em realidade digital.
+                </p>
+                <a href="pl3-portfolio.html" id="portfolio-cta-btn" class="btn btn-primary">
+                    <span>Ver Projetos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="cube__face cube__face--front"><i class="devicon-react-original"></i></div>
+                    <div class="cube__face cube__face--back"><i class="devicon-javascript-plain"></i></div>
+                    <div class="cube__face cube__face--right"><i class="devicon-html5-plain"></i></div>
+                    <div class="cube__face cube__face--left"><i class="devicon-css3-plain"></i></div>
+                    <div class="cube__face cube__face--top"><i class="devicon-figma-plain"></i></div>
+                    <div class="cube__face cube__face--bottom"><i class="devicon-nodejs-plain"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <p class="section-label">Contato</p>
+            <h2 class="section-title">Vamos Trabalhar <span class="gradient-text">Juntos</span></h2>
+        </div>
+        <div class="contact-wrapper scroll-reveal">
+            <form class="contact-form" id="contactForm">
+                <!-- Barra de Progresso -->
+                <div class="progress-bar">
+                    <div class="progress-step active" data-step="1">Informações</div>
+                    <div class="progress-step" data-step="2">Detalhes</div>
+                    <div class="progress-step" data-step="3">Enviar</div>
+                </div>
+
+                <!-- Etapa 1: Informações Básicas -->
+                <div class="form-step active" id="step-1">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name" placeholder=" " required>
+                        <label for="name" class="form-label">Seu nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="email" placeholder=" " required>
+                        <label for="email" class="form-label">Seu melhor email</label>
+                    </div>
+                    <button type="button" class="form-button next-btn">Avançar <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Etapa 2: Detalhes do Projeto -->
+                <div class="form-step" id="step-2">
+                    <div class="form-group">
+                        <textarea class="form-input" id="message" placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Conte-me sobre sua ideia</label>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="form-button-secondary prev-btn"><i class="fas fa-arrow-left"></i> Voltar</button>
+                        <button type="button" class="form-button next-btn">Revisar <i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+
+                <!-- Etapa 3: Envio -->
+                <div class="form-step" id="step-3">
+                    <h3 class="review-title">Tudo pronto!</h3>
+                    <p class="review-text">Clique abaixo para enviar sua mensagem. Responderei o mais breve possível!</p>
+                    <div class="form-navigation">
+                        <button type="button" class="form-button-secondary prev-btn"><i class="fas fa-arrow-left"></i> Voltar</button>
+                        <button type="submit" class="form-button">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/cherryson222-cloud" class="social-link" target="_blank" style="--social-color: #ffffff;" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cammillyrafaella" class="social-link" target="_blank" style="--social-color: #0A66C2;" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:rafaellawxt@gmail.com" class="social-link" target="_blank" style="--social-color: #EA4335;" data-tooltip="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/5581996273630" class="social-link" target="_blank" style="--social-color: #25D366;" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2025 Cammilly Rafaella. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox/Modal para Imagens de Projeto -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
